@@ -3,10 +3,11 @@ package framework.features.booking;
 import framework.data.Booking;
 import framework.data.BookingDate;
 import framework.features.BaseTest;
+import io.qameta.allure.Story;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-
+@Story("Booking")
 public class UpdateBookingTest extends BaseTest {
 
   @Test

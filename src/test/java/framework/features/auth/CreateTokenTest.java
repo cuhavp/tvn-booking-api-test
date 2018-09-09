@@ -2,11 +2,12 @@ package framework.features.auth;
 
 import com.google.gson.JsonObject;
 import framework.features.BaseTest;
+import io.qameta.allure.Story;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.Is.is;
-
+@Story("Auth")
 public class CreateTokenTest extends BaseTest {
   @Test
   public void login() {
