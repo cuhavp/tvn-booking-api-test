@@ -1,0 +1,11 @@
+{
+  "firstname": "mark",
+  "lastname": "taylor",
+  "totalprice": 123,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2018-09-01",
+    "checkout": "2013-09-23"
+  },
+  "additionalneeds": "lunch"
+}

@@ -1,0 +1,23 @@
+<suite name="Booking">
+    <test name="Authentication">
+        <classes>
+            <class name="framework.features.auth.CreateTokenTest"/>
+        </classes>
+    </test>
+    <test name="Booking">
+        <classes>
+            <class name="framework.features.booking.GetBookingIdsTest"/>
+            <class name="framework.features.booking.GetBookingTest"/>
+            <class name="framework.features.booking.CreateBookingTest"/>
+            <class name="framework.features.booking.UpdateBookingTest"/>
+            <class name="framework.features.booking.PartialUpdateBookingTest"/>
+            <class name="framework.features.booking.DeleteBookingTesting"/>
+        </classes>
+    </test>
+    <test name="Ping">
+        <classes>
+            <class name="framework.features.ping.HeathCheckingTest"/>
+        </classes>
+    </test>
+
+</suite>
