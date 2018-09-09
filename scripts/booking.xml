@@ -19,5 +19,4 @@
             <class name="framework.features.ping.HeathCheckingTest"/>
         </classes>
     </test>
-
 </suite>

@@ -9,11 +9,12 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.lessThan;
+
 @Story("Booking")
 public class GetBookingTest extends BaseTest {
 
 
-  @Test
+  @Test(priority = 1)
   public void specificBooking() {
     given().spec(reqSpec)
             .when()
@@ -32,17 +33,18 @@ public class GetBookingTest extends BaseTest {
             new Object[]{"4"},
     };
   }
-  @Test(dataProvider = "bookingData")
+
+  @Test(dataProvider = "bookingData", priority = 2)
   public void specificBookingWithParam(String id) {
     given().spec(reqSpec).pathParam("bookingID", id)
-            .when()
+            .when().log().all()
             .get("booking/{bookingID}")
             .then().log().all()
             .statusCode(200)
             .time(lessThan(20000L));
   }
 
-  @Test
+  @Test(priority = 3)
   public void myBooking() {
     Booking myBooking = given().spec(reqSpec)
             .when()
