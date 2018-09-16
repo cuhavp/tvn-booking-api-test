@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
 @Story("Booking")
-public class DeleteBookingTesting extends BaseTest {
+public class DeleteBookingTest extends BaseTest {
 
   @Test
   public void deleteMyBooking() {
